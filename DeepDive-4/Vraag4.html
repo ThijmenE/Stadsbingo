@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vraag 4</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="A">
+    <div class="google">
+      <iframe id="google"
+        src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d355.1174654866657!2d6.57009937962115!3d53.21899533406327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e2!4m5!1s0x47c9cd50448a1add%3A0x3b139be5ff9faa10!2sForum%20Groningen%2C%20Nieuwe%20Markt%2C%20Groningen!3m2!1d53.2189968!2d6.5703301!4m0!5e0!3m2!1snl!2snl!4v1747130090973!5m2!1snl!2snl"></iframe>
+    </div>
+    <div class="text">
+      <h1>Vraag 4</h1>
+
+      <p>Welke expositie is op dit moment bezig in het forum?</p>
+
+      <input id="numb">
+
+      <button type="button" onclick="myFunction()">Submit</button>
+
+      <p id="demo"></p>
+
+      <script>
+        function myFunction() {
+          const x = document.getElementById("numb").value.trim().toLowerCase();
+          const result = document.getElementById("demo");
+
+          if (x === "the world of music video") {
+            result.innerHTML = "Goed! pak van het 4e woord de 3e letter en ga door! <br><button onclick=\"window.location.href='Vraag5.html'\">Ga naar volgende pagina</button>";
+          } else {
+            result.innerHTML = "Fout!";
+          }
+        }
+      </script>
+    </div>
+</body>
+
+</html>

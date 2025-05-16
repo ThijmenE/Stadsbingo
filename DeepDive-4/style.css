@@ -1,0 +1,55 @@
+body {
+    display: grid;
+    font-size: 30px;
+    text-align: center;
+    background-color: lightgrey;
+}
+
+iframe {
+    height: 750px;
+    width: 115%;
+    border-radius: 10%;
+    display: inline-block;
+    object-fit: cover;
+    border: 3px dashed #3498db;
+    border-radius: 10px;
+}
+
+.A {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#google {
+    border: solid gray 8px;
+    box-shadow: 10px 10px 10px darkgray;
+}
+
+.text {
+    border: solid gray 8px;
+    box-shadow: 10px 10px 10px darkgray;
+    background-color: rgba(140, 136, 136, 0.176);
+}
+
+.eind {
+    border: solid gray 8px;
+    box-shadow: 10px 10px 10px darkgray;
+    background-color: rgba(140, 136, 136, 0.176);
+    display: inline-block;
+}
+@media only screen and (max-width: 1200px) {
+    .A {
+        flex-direction: column;
+        padding-inline: 1rem;
+    }
+
+    .currgraph,
+    .pastgraph,
+    #map {
+        width: 100%;
+    }
+}

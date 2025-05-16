@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vraag 1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="A">
+    <div class="google">
+      <iframe id="google"
+        src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d355.1138755045979!2d6.555772547951143!3d53.21942834466931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e2!4m0!4m3!3m2!1d53.219401129432335!2d6.555837139414653!5e0!3m2!1snl!2snl!4v1747129779470!5m2!1snl!2snl"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="text">
+      <h1>Vraag 1</h1>
+
+      <p>wat is het blauwe bord met de langste naam?</p>
+
+      <input id="numb">
+
+      <button type="button" onclick="myFunction()">Submit</button>
+
+      <p id="demo"></p>
+    </div>
+
+      <script>
+        function myFunction() {
+          const x = document.getElementById("numb").value.trim().toLowerCase();
+          const result = document.getElementById("demo");
+
+          if (x === "wilhelminakade") {
+            result.innerHTML = "Goed! pak de 1e letter en ga door! <br><button onclick=\"window.location.href='Vraag2.html'\">Ga naar volgende pagina</button>";
+          } else {
+            result.innerHTML = "Fout!";
+          }
+        }
+      </script>
+    </div>
+</body>
+</html>

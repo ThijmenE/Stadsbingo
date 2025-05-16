@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vraag 5</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="A">
+    <div class="google">
+      <iframe id="google"
+        src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d797.3049146424752!2d6.576400343852532!3d53.213990441572534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e2!4m5!1s0x47c9d2aa05f2ec69%3A0x92c3e92b05108692!2sSPOT%2FDe%20Oosterpoort%2C%20Trompsingel%2C%20Groningen!3m2!1d53.2139744!2d6.5763342!4m0!5e0!3m2!1snl!2snl!4v1747130123779!5m2!1snl!2snl"></iframe>
+    </div>
+    <div class="text">
+      <h1>Vraag 5</h1>
+
+      <p>hoe word dit gebouw ook wel genoemd?</p>
+
+      <input id="numb">
+
+      <button type="button" onclick="myFunction()">Submit</button>
+
+      <p id="demo"></p>
+
+      <script>
+        function myFunction() {
+          const x = document.getElementById("numb").value.trim().toLowerCase();
+          const result = document.getElementById("demo");
+
+          if (x === "spot") {
+            result.innerHTML = "Goed! pak de 1e letter en ga door! <br><button onclick=\"window.location.href='Einde.html'\">Ga naar volgende pagina</button>";
+          } else {
+            result.innerHTML = "Fout!";
+          }
+        }
+      </script>
+    </div>
+</body>
+
+</html>

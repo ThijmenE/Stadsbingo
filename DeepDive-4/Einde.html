@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EInde</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="d">
+    <div class="eind">
+      <h1>Laatste Vraag</h1>
+
+      <p>Wat is het woord wat je hebt gekregen?</p>
+
+      <input id="numb">
+
+      <button type="button" onclick="myFunction()">Submit</button>
+
+      <p id="demo"></p>
+
+      <script>
+        function myFunction() {
+          const x = document.getElementById("numb").value.trim().toLowerCase();
+          const result = document.getElementById("demo");
+
+          if (x === "winst") {
+            result.innerHTML = "Gefeliciteerd je hebt gewonnen!" //www.google.com/url?sa=i&url=https%3A%2F%2Ftenor.com%2Fsearch%2Fkanye-west-gifs&psig=AOvVaw3uXHWrOZLuuJwCa2WhldGV&ust=1747296095295000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCMjPn6q_oo0DFQAAAAAdAAAAABAE;
+          } else {
+            result.innerHTML = "Fout!";
+          }
+        }
+      </script>
+    </div>
+  </div>
+</body>
+</html>
