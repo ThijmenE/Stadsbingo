@@ -5,7 +5,7 @@ html
 css
 javascript
 
-gebruikte:
+gebruikt:
 embed/iframe
 
 bronnen:
